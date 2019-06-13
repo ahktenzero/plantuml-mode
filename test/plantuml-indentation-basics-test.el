@@ -167,6 +167,7 @@ the position of | in AFTER."
       ;; use 2 spaces instead of one tab for indentation
       (setq-local indent-tabs-mode nil)
       (setq-local tab-width 2)
+      (setq-local plantuml-indentation-step 2)
       (indent-according-to-mode)
 
       (should (equal expected-state (buffer-string)))
